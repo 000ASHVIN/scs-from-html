@@ -21,9 +21,48 @@
                 margin: auto;
             }
         }
-        
+        .state{
+            border-left: 0px !important;
+            border-right: 0px !important;
+        }
+        .city{
+            border-right: 0px !important;
+        }
+        .street{
+            border-right: 0px !important;
+        }
+        .zip{
+            border-left: 0px !important;
+        } 
+        .ques{
+            display: flex;
+        }
+        .questions {
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+        .questions p:last-child {
+            justify-self: end;
+        }
+        .date p {
+            display: flex;
+            justify-content: end;
+        }
+        .ques p:last-child {
+            display: flex;
+            justify-content: center;
+        }
+        .checkbox:last-child {
+            display: flex;
+            justify-content: center;
+        }
+        .checkbox input[type="checkbox"] {
+            margin: 0 5px;
+        }
         .business_table {
             border-collapse:collapse;
+            border-spacing: 0;
+            width: 100%;
         }
         .business_table tr td {
             border: 1px solid black;
@@ -35,7 +74,50 @@
             background-color: #0171bc;
             color: white;
         }
+        .personalinfo_table{
+            border-collapse:collapse;
+        }
+        .personalinfo_table tr td {
+            border: 1px solid black;
+            padding: 5px 10px;
+            font-size: 12px;
+            height: 25px;
+        }
+        .personalinfo_table .title {
+            background-color: #0171bc;
+            color: white;
+        }
+        .border{
+            border-bottom: 1px solid;
+            height: 12px;
+            width: 150px;
+        }
+        .year{
+            border-bottom: 1px solid;
+            height: 12px;
+            width: 80px;
+            margin-top: 10px;
+            justify-content: end;
+        }
+        .company{
+            border-left: 0px !important;
+            border-right: 0px !important;
+            border-top: 0px !important;
+            border-bottom: 0px !important;
+        }
+        .underline {
+            border-bottom: 1px solid black;
+            display: inline-block;
+            width: 150px;
+        }
+        .underline1 {
+            border-bottom: 1px solid black;
+            display: inline-block;
+            width: 70px;
+        }
+        /* .date{
 
+        } */
         .applicant_table tr td {
             border: 1px solid black;
             padding: 5px 10px;
@@ -52,6 +134,17 @@
             margin-top: 1px;
             line-height: normal;
         }
+        .text{
+            font-size: 10px;
+            width: 100%;
+        }
+        @media only screen and (min-width: 520px) and (max-width: 700px) {
+            #mobile {
+               display: none;
+               background-color: aqua;
+            }
+        }
+    
     </style>
 </head>
 
@@ -78,7 +171,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4">
+                    <td colspan="4" valign="top" width="50%">
                         <p>Legal Business Name </p>
                     </td>
                     <td colspan="2">
@@ -89,7 +182,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" valign="top" width="25%">
                         <p>DBA Business Name</p>
                     </td>
                     <td colspan="2">
@@ -116,148 +209,301 @@
                         <p>Alternate / Cell Phone Number</p>
                     </td>
                 </tr>
+                <tr>    
+                    <td colspan="4" class="street">
+                        <p><b>Business Address</b>: Street</p>
+                    </td>
+                    <td  colspan="2" class="state">
+                        <p>City</p>
+                    </td>
+                    <td colspan="1" class="state">
+                        <span>State</span>
+                    </td>
+                    <td colspan="1" class="zip">
+                        <span>Zip</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="questions">
+                            <p>Seasonal Business?</p>
+                            <p>
+                                <input type="checkbox"><label>Yes</label>
+                                <span>&nbsp;&nbsp;</span>
+                                <input type="checkbox"><label>No</label>
+                            </p>
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <p>Tax ID Number</p>
+                    </td>
+                    <td colspan="2">
+                        <p>State</p>
+                    </td>
+                    <td  colspan="2">
+                        <p>Nature of Business</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                          <div class="questions">
+                            <p>Seasonal Business:</p>   
+                            <p>
+                                <input type="checkbox"><label>Corporation</label>
+                                <input type="checkbox"><label>Partnership</label>
+                                <input type="checkbox"><label>Sole Proprietor</label>
+                                <input type="checkbox"><label>LLC.</label>
+                            </p>
+                          </div>
+                    </td>
+                    <td colspan="2">
+                        <p>Monthly Total Sales</p>
+                    </td>
+                    <td  colspan="2">
+                        <p>AVG Daily Bank Balance</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="street">
+                        <p>Use Of Funds:</p>
+                    </td>
+                    <td  colspan="4" class="zip">
+                        <p>Advance Amount Requested:</p>
+                    </td>
+                </tr>
             </tbody>
-        </table>
-
-        <center>
-            <h2 style="margin-top:0">DRIVER EMPLOYMENTAPPLICATION</h2>
-            <h5 style=" font-size: 12px;font-weight:normal;margin-top:0%">[COMPANY NAME, ADDRESS, PHONE NUMBER, AND EMAIL]
-            </h5>
-            <h6 style="font-weight:normal;margin-top:0%">An Equal Opportunity Employe</h6>
-        </center>
-        <p style="font-size: 12px;font-weight:normal;margin-top:0%;margin-botum:0%">COMPLETE IN FULL OR IT WILL NOT BE
-            CONSIDERED.</p>
-
-        <table style="border-collapse:collapse;" cellspacing="0" width="100%" class="applicant_table">
+        </table><br>
+        <table cellspacing="0" width="100%" class="personalinfo_table">
             <tbody>
                 <tr>
-                    <td colspan="10" class="text-center">
-                        APPLICANT INFORMATION
+                    <td colspan="8" class="title">
+                        <h2><b>REFERENCES</b></h2>
                     </td>
                 </tr>
                 <tr>
-                    <td class="color"width="100px">FIRST NAME</td>
-                    <td colspan="2"></td>
-                    <td class="color" width="5px">MIDDLE NAME</td>
-                    <td colspan="2"></td>
-                    <td class="color"width="5px">LAST NAME</td>
-                    <td colspan="3"></td>
+                    <td colspan="4">
+                        <p>Landlord Contact Name and Number</p>
+                    </td>
+                    <td colspan="2">
+                        <p>Length of Time at Location</p>
+                    </td>
+                    <td colspan="2">
+                        <p>Time Remaining on Lease</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td class="color">PHONE</td>
-                    <td colspan="2"></td>
-                    <td class="color">EMAIL</td>
-                    <td colspan="6"></td>
+                    <td colspan="4">
+                        <p>Trade Reference # 1 Contact Name and Number</p>
+                    </td>
+                    <td colspan="4">
+                        <p>Trade Reference # 2 Contact Name and Number</p>
+                    </td>
                 </tr>
-                <tr>
-                    <td class="color">DATE OF BIRTH</td>
-                    <td colspan="2"></td>
-                    <td colspan="2" class="color">SOCIAL SECURITY #</td>
-                    <td colspan="5"></td>
-                </tr>
-                <tr>
-                    <td class="color">DATE OFAPPLICATION</td>
-                    <td colspan="1"></td>
-                    <td class="color" width="5px">POSITION APPLIED FOR</td>
-                    <td colspan="3"></td>
-                    <td class="color">DATE AVAILABLE FOR WORK</td>
-                    <td colspan="3"></td>
-                </tr>
-
-            </tbody>
-        </table>
-        <table>
-            <tr height="50">
-                <td>
-                    <p style="">
-                        Do you have legal right to
-                        work in
-                        the United States? </p>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td> <input type="checkbox"> </td>
-                            <td> <label>Yes</label> </td>
-                            <td> <input type="checkbox"> </td>
-                            <td> <label>No</label> </td>
-                        </tr>
-                    </table>
-                </td>
-
-
-            </tr>
-        </table>
-
-        <table style="border-collapse:collapse;" cellspacing="0" width="100%" class="applicant_table">
+            </tbody>    
+        </table><br>
+        <table cellspacing="0" id="moblie" width="100%" class="personalinfo_table">
             <tbody>
                 <tr>
-                    <td colspan="12" class="text-center">
-                        PREVIOUS THREE YEARS RESIDENCY
+                    <td colspan="8" class="title">
+                        <h2><b>QUALIFYING QUESTIONS</b></h2>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="12" class="text-center" style="background-color:#eceef1;color:black">
-                        Attach additional sheet if more space is needed
+                    <td colspan="4">
+                        <div class="questions">
+                            <p>Do you own any commercial or residential property?</p>
+                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
+                        </div>
+                        <div class="questions">
+                            <p>Do you own any vehicles, equipment or machinery?</p>
+                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
+                        </div>
+                        <div class="questions">
+                            <p>Does your business have future receivables(unpaid invoices)</p>
+                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
+                        </div>  
+                        <div class="questions">
+                            <p>Are you looklng to purchase equipment?</p>
+                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
+                        </div>
+                        <div class="questions">
+                            <p>Any open Liens or Judgments?</p>
+                               <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
+                        </div>
+                        <div class="questions">
+                            <p>Did you ever file for bankruptcy?</p>
+                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
+                        </div>  
+                        <div class="questions">
+                            <p>Do you own any commercial or residential property?</p>
+                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
+                        </div>  
+                        <div class="ques">
+                            <p>**If yes what is the status:&nbsp;</p>
+                            <p class="checkbox"><input type="checkbox"><label>Discharged</label><input type="checkbox"><label>Dismissed</label></p>
+                        </div>
+                        <div class="ques">
+                            <p>Bankruptcy Year :&nbsp;</p>
+                            <p class="year"></p> 
+                        </div>
+                    </td>
+                    <td colspan="4">
+                            <div class="ques">
+                                <p>Do you own any commercial or residential property? &nbsp;&nbsp;</p>
+                                <p class="checkbox"><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
+                            </div>
+                           <p>If yes, which advance company and what is your current balance?</p>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td colspan="1" class="company">
+                                            <p>Company</p>
+                                            <p><span class="number">1.</span> <span class="underline"></span></p>
+                                            <p><span class="number">2.</span> <span class="underline"></span></p>
+                                            <p><span class="number">3.</span> <span class="underline"></span></p>
+                                            <p><span class="number">4.</span> <span class="underline"></span></p> 
+                                        </td>
+                                        <td colspan="1" class="company ">
+                                            <p>Balance</p>
+                                            <p class="balance"><span class="number">1.</span> <span class="underline1"></span></p>
+                                            <p class="balance"><span class="number">2.</span> <span class="underline1"></span></p>
+                                            <p class="balance"><span class="number">3.</span> <span class="underline1"></span></p>
+                                            <p class="balance"><span class="number">4.</span> <span class="underline1"></span></p> 
+                                        </td>
+                                        
+                                    </tr>
+                                </table> 
+                            </div>         
+                    </td>
+                </tr>         
+            </tbody>
+        </table><br>
+    
+        <table cellspacing="0" width="100%" class="personalinfo_table">
+            <tbody>
+                <tr>
+                    <td colspan="8" class="title">
+                        <h2><b>PERSONAL INFORMATION ON PARTNERS, PROPRIETORS, OR GUARANTOR</b></h2>
                     </td>
                 </tr>
                 <tr>
-                    <td class="color"width="100px"></td>
-                    <td colspan="5"class="color">STREET</td>
-                    <td class="color"colspan="2" width="5px">CITY</td>
-                    <td colspan="2"class="color">STATE</td>
-                    <td class="color"width="5px">ZIP CODE</td>
-                    <td colspan="1"class="color"># OF YEARS AT ADDRESS</td>
+                    <td colspan="2">
+                        <p>Name</p>
+                    </td>
+                    <td colspan="1">
+                        <p>Credit Score (If Known)</p>
+                    </td>
+                    <td colspan="2">
+                        <p>Name</p>
+                    </td>
+                    <td colspan="1">
+                        <p>Personal Annual Revenue</p>
+                    </td>
+                    
                 </tr>
                 <tr>
-                    <td class="color"width="100px">CURRENT</td>
-                    <td colspan="5"></td>
-                    <td colspan="2" width="5px"></td>
-                    <td colspan="2"></td>
-                    <td width="5px"></td>
-                    <td colspan="1"></td>
+                    <td colspan="1">
+                        <p>Title/ Percentage (%) of 
+                            DOB Ownership</p>
+                    </td>
+                    <td colspan="1">
+                        <p>Social Security No</p>
+                    </td>
+                    <td colspan="1">
+                        <p>DOB</p>
+                    </td>
+                    <td colspan="1">
+                        <p>Title/ Percentage (%) of 
+                            DOB Ownership</p>
+                    </td>
+                    <td colspan="1">
+                        <p>Social Security No</p>
+                    </td>
+                    <td colspan="1">
+                        <p>DOB</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td class="color"width="100px">MAILING</td>
-                    <td colspan="5"></td>
-                    <td colspan="2" width="5px"></td>
-                    <td colspan="2"></td>
-                    <td width="5px"></td>
-                    <td colspan="1"></td>
+                    <td colspan="3">
+                        <p>Address</p>
+                    </td>
+                    <td colspan="3">
+                        <p>Address</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" class="city">
+                        <p>City/Country</p>
+                    </td>
+                    <td colspan="1" class="state">
+                        <p>State</p>
+                    </td>
+                    <td colspan="1" class="zip">
+                        <p>Zip</p>
+                    </td>
+                    <td colspan="1" class="city">
+                        <p>City/Country</p>
+                    </td>
+                    <td colspan="1" class="state">
+                        <p>State</p>
+                    </td>
+                    <td colspan="1" class="zip">
+                        <p>Zip</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        <p>Home Phone Number</p>
+                    </td>
+                    <td colspan="2">
+                        <p>Rent /Own (How Long)</p>
+                    </td>
+                    <td colspan="1">
+                        <p>Home Phone Number</p>
+                    </td>
+                    <td colspan="2">
+                        <p>Rent /Own (How Long)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br> 
+        <table cellspacing="0" width="100%" class="personalinfo_table">
+            <tbody>
+                <tr>
+                    <h6><b>AUTHORIZATION</b></h6>
+                </tr>
+                <tr>
+                    <p class="text">
+                        Each of the undersigned, who is either a Principal, Sole Proprietor or Personal Guarantor of the above-named business, recognizes that his or her individual credit history may be a tactor in the evaluation ot this
+                        application of the above named business for funding. Each of the undersigned hereby authorizes ATYG "steady capital solutions· and its assigns and/or affiliate partners of ATYG "steady capital solutions· to obtain
+                        his or her credit report (and any updates to his or her credit report) in connection with ATYG "steady capital solutions" consideration of this application and any affiliate partners of ATYG "steady capital solutions" in
+                        connection with any subsequent review of the account of the above-named business. Each of the undersigned hereby authorizes ATYG "steady capital solutions" to utilize information including but not limited to calls,
+                        emails, texts and direct mail for marketing efforts from ATYG "steady capital solutions· and affiliates.
+                    </p>
+                </tr>
+                <tr>
+                    <td colspan="4" class="company date">
+                        <p><span class="number">Date</span> <span class="underline1"></span></p>
+
+                    </td>
+                    <td colspan="4" class="company date">
+                        <p><span class="number">Date</span> <span class="underline1"></span></p>
+                    </td>
                 </tr>
 
                 <tr>
-                    <td class="color"width="100px">PREVIOUS</td>
-                    <td colspan="5"></td>
-                    <td colspan="2" width="5px"></td>
-                    <td colspan="2"></td>
-                    <td width="5px"></td>
-                    <td colspan="1"></td>
+                    <td colspan="4" class="company">
+                        <p>X</p>
+                        <p>Partner, Proprietor or Guarantor</p>
+                    </td>
+                    <td colspan="4" class="company">
+                        <p>X</p>
+                        <p>Partner, Proprietor or Guarantor</p>
+                    </td>
                 </tr>
-
-                <tr>
-                    <td class="color"width="100px">PREVIOUS</td>
-                    <td colspan="5"></td>
-                    <td colspan="2" width="5px"></td>
-                    <td colspan="2"></td>
-                    <td width="5px"></td>
-                    <td colspan="1"></td>
-                </tr>
-
-                <tr>
-                    <td class="color"width="100px">PREVIOUS</td>
-                    <td colspan="5"></td>
-                    <td colspan="2" width="5px"></td>
-                    <td colspan="2"></td>
-                    <td width="5px"></td>
-                    <td colspan="1"></td>
-                </tr>
-
-
-
             </tbody>
         </table>
-    </div>
-</body>
+    </body>
+
 
 </html>

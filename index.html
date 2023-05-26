@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>BUSINESS INFORMATION</title>
     <style>
@@ -9,112 +10,138 @@
             font-family: 'Nunito', sans-serif;
             box-sizing: border-box;
         }
+
         h2 {
             margin: 0;
         }
+
         p {
             margin-top: 0;
         }
+
         @media (min-width: 1200px) {
             .container {
                 max-width: 1140px;
                 margin: auto;
             }
         }
-        .state{
+
+        .state {
             border-left: 0px !important;
             border-right: 0px !important;
         }
-        .city{
+
+        .city {
             border-right: 0px !important;
         }
-        .street{
+
+        .street {
             border-right: 0px !important;
         }
-        .zip{
+
+        .zip {
             border-left: 0px !important;
-        } 
-        .ques{
+        }
+
+        .ques {
             display: flex;
         }
+
         .questions {
             display: grid;
             grid-template-columns: 1fr auto;
         }
+
         .questions p:last-child {
             justify-self: end;
         }
+
         .date p {
             display: flex;
             justify-content: end;
         }
+
         .ques p:last-child {
             display: flex;
             justify-content: center;
         }
+
         .checkbox:last-child {
             display: flex;
             justify-content: center;
         }
+
         .checkbox input[type="checkbox"] {
             margin: 0 5px;
         }
+
         .business_table {
-            border-collapse:collapse;
+            border-collapse: collapse;
             border-spacing: 0;
             width: 100%;
         }
+
         .business_table tr td {
             border: 1px solid black;
             padding: 5px 10px;
             font-size: 12px;
             height: 25px;
         }
+
         .business_table .title {
             background-color: #0171bc;
             color: white;
         }
-        .personalinfo_table{
-            border-collapse:collapse;
+
+        .personalinfo_table {
+            border-collapse: collapse;
         }
+
         .personalinfo_table tr td {
             border: 1px solid black;
             padding: 5px 10px;
             font-size: 12px;
             height: 25px;
         }
+
         .personalinfo_table .title {
             background-color: #0171bc;
             color: white;
         }
-        .border{
+
+        .border {
             border-bottom: 1px solid;
             height: 12px;
             width: 150px;
         }
-        .year{
+
+        .year {
             border-bottom: 1px solid;
             height: 12px;
             width: 80px;
             margin-top: 10px;
             justify-content: end;
         }
-        .company{
+
+        .company {
             border-left: 0px !important;
             border-right: 0px !important;
             border-top: 0px !important;
             border-bottom: 0px !important;
         }
+
         .underline {
             border-bottom: 1px solid black;
             display: inline-block;
             width: 150px;
         }
+
         .underline1 {
             border-bottom: 1px solid black;
             display: inline-block;
             width: 70px;
         }
+
         /* .date{
 
         } */
@@ -134,17 +161,32 @@
             margin-top: 1px;
             line-height: normal;
         }
-        .text{
+
+        .text {
             font-size: 10px;
             width: 100%;
         }
+
         @media only screen and (min-width: 520px) and (max-width: 700px) {
             #mobile {
-               display: none;
-               background-color: aqua;
+                display: none;
+                background-color: aqua;
             }
         }
-    
+
+        .qualifying_questions_td {
+            padding: 0 !important;
+        }
+        .qualifying_questions {
+            display: flex;
+        }
+        .qualifying_questions > div {
+            flex-basis: 50%;
+            padding: 10px;
+        }
+        .questions_box {
+            border-right: 1px solid black;
+        }
     </style>
 </head>
 
@@ -209,11 +251,11 @@
                         <p>Alternate / Cell Phone Number</p>
                     </td>
                 </tr>
-                <tr>    
+                <tr>
                     <td colspan="4" class="street">
                         <p><b>Business Address</b>: Street</p>
                     </td>
-                    <td  colspan="2" class="state">
+                    <td colspan="2" class="state">
                         <p>City</p>
                     </td>
                     <td colspan="1" class="state">
@@ -240,26 +282,26 @@
                     <td colspan="2">
                         <p>State</p>
                     </td>
-                    <td  colspan="2">
+                    <td colspan="2">
                         <p>Nature of Business</p>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="4">
-                          <div class="questions">
-                            <p>Seasonal Business:</p>   
+                        <div class="questions">
+                            <p>Seasonal Business:</p>
                             <p>
                                 <input type="checkbox"><label>Corporation</label>
                                 <input type="checkbox"><label>Partnership</label>
                                 <input type="checkbox"><label>Sole Proprietor</label>
                                 <input type="checkbox"><label>LLC.</label>
                             </p>
-                          </div>
+                        </div>
                     </td>
                     <td colspan="2">
                         <p>Monthly Total Sales</p>
                     </td>
-                    <td  colspan="2">
+                    <td colspan="2">
                         <p>AVG Daily Bank Balance</p>
                     </td>
                 </tr>
@@ -267,7 +309,7 @@
                     <td colspan="4" class="street">
                         <p>Use Of Funds:</p>
                     </td>
-                    <td  colspan="4" class="zip">
+                    <td colspan="4" class="zip">
                         <p>Advance Amount Requested:</p>
                     </td>
                 </tr>
@@ -299,7 +341,7 @@
                         <p>Trade Reference # 2 Contact Name and Number</p>
                     </td>
                 </tr>
-            </tbody>    
+            </tbody>
         </table><br>
         <table cellspacing="0" id="moblie" width="100%" class="personalinfo_table">
             <tbody>
@@ -309,76 +351,94 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4">
-                        <div class="questions">
-                            <p>Do you own any commercial or residential property?</p>
-                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
-                        </div>
-                        <div class="questions">
-                            <p>Do you own any vehicles, equipment or machinery?</p>
-                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
-                        </div>
-                        <div class="questions">
-                            <p>Does your business have future receivables(unpaid invoices)</p>
-                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
-                        </div>  
-                        <div class="questions">
-                            <p>Are you looklng to purchase equipment?</p>
-                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
-                        </div>
-                        <div class="questions">
-                            <p>Any open Liens or Judgments?</p>
-                               <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
-                        </div>
-                        <div class="questions">
-                            <p>Did you ever file for bankruptcy?</p>
-                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
-                        </div>  
-                        <div class="questions">
-                            <p>Do you own any commercial or residential property?</p>
-                            <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
-                        </div>  
-                        <div class="ques">
-                            <p>**If yes what is the status:&nbsp;</p>
-                            <p class="checkbox"><input type="checkbox"><label>Discharged</label><input type="checkbox"><label>Dismissed</label></p>
-                        </div>
-                        <div class="ques">
-                            <p>Bankruptcy Year :&nbsp;</p>
-                            <p class="year"></p> 
-                        </div>
-                    </td>
-                    <td colspan="4">
-                            <div class="ques">
-                                <p>Do you own any commercial or residential property? &nbsp;&nbsp;</p>
-                                <p class="checkbox"><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></p>
+                    <td colspan="8" class="qualifying_questions_td">
+                        <div class="qualifying_questions">
+                            <div class="questions_box">
+                                <div class="questions">
+                                    <p>Do you own any commercial or residential property?</p>
+                                    <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label>
+                                    </p>
+                                </div>
+                                <div class="questions">
+                                    <p>Do you own any vehicles, equipment or machinery?</p>
+                                    <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label>
+                                    </p>
+                                </div>
+                                <div class="questions">
+                                    <p>Does your business have future receivables(unpaid invoices)</p>
+                                    <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label>
+                                    </p>
+                                </div>
+                                <div class="questions">
+                                    <p>Are you looklng to purchase equipment?</p>
+                                    <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label>
+                                    </p>
+                                </div>
+                                <div class="questions">
+                                    <p>Any open Liens or Judgments?</p>
+                                    <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label>
+                                    </p>
+                                </div>
+                                <div class="questions">
+                                    <p>Did you ever file for bankruptcy?</p>
+                                    <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label>
+                                    </p>
+                                </div>
+                                <div class="questions">
+                                    <p>Do you own any commercial or residential property?</p>
+                                    <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label>
+                                    </p>
+                                </div>
+                                <div class="ques">
+                                    <p>**If yes what is the status:&nbsp;</p>
+                                    <p class="checkbox"><input type="checkbox"><label>Discharged</label><input
+                                            type="checkbox"><label>Dismissed</label></p>
+                                </div>
+                                <div class="ques">
+                                    <p>Bankruptcy Year :&nbsp;</p>
+                                    <p class="year"></p>
+                                </div>
                             </div>
-                           <p>If yes, which advance company and what is your current balance?</p>
+
                             <div>
-                                <table>
-                                    <tr>
-                                        <td colspan="1" class="company">
-                                            <p>Company</p>
-                                            <p><span class="number">1.</span> <span class="underline"></span></p>
-                                            <p><span class="number">2.</span> <span class="underline"></span></p>
-                                            <p><span class="number">3.</span> <span class="underline"></span></p>
-                                            <p><span class="number">4.</span> <span class="underline"></span></p> 
-                                        </td>
-                                        <td colspan="1" class="company ">
-                                            <p>Balance</p>
-                                            <p class="balance"><span class="number">1.</span> <span class="underline1"></span></p>
-                                            <p class="balance"><span class="number">2.</span> <span class="underline1"></span></p>
-                                            <p class="balance"><span class="number">3.</span> <span class="underline1"></span></p>
-                                            <p class="balance"><span class="number">4.</span> <span class="underline1"></span></p> 
-                                        </td>
-                                        
-                                    </tr>
-                                </table> 
-                            </div>         
+                                <div class="ques">
+                                    <p>Do you own any commercial or residential property? &nbsp;&nbsp;</p>
+                                    <p class="checkbox"><input type="checkbox"><label>Yes</label><input
+                                            type="checkbox"><label>No</label></p>
+                                </div>
+                                <p>If yes, which advance company and what is your current balance?</p>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td colspan="1" class="company">
+                                                <p>Company</p>
+                                                <p><span class="number">1.</span> <span class="underline"></span></p>
+                                                <p><span class="number">2.</span> <span class="underline"></span></p>
+                                                <p><span class="number">3.</span> <span class="underline"></span></p>
+                                                <p><span class="number">4.</span> <span class="underline"></span></p>
+                                            </td>
+                                            <td colspan="1" class="company ">
+                                                <p>Balance</p>
+                                                <p class="balance"><span class="number">1.</span> <span
+                                                        class="underline1"></span></p>
+                                                <p class="balance"><span class="number">2.</span> <span
+                                                        class="underline1"></span></p>
+                                                <p class="balance"><span class="number">3.</span> <span
+                                                        class="underline1"></span></p>
+                                                <p class="balance"><span class="number">4.</span> <span
+                                                        class="underline1"></span></p>
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </td>
-                </tr>         
+                </tr>
             </tbody>
         </table><br>
-    
+
         <table cellspacing="0" width="100%" class="personalinfo_table">
             <tbody>
                 <tr>
@@ -399,11 +459,11 @@
                     <td colspan="1">
                         <p>Personal Annual Revenue</p>
                     </td>
-                    
+
                 </tr>
                 <tr>
                     <td colspan="1">
-                        <p>Title/ Percentage (%) of 
+                        <p>Title/ Percentage (%) of
                             DOB Ownership</p>
                     </td>
                     <td colspan="1">
@@ -413,7 +473,7 @@
                         <p>DOB</p>
                     </td>
                     <td colspan="1">
-                        <p>Title/ Percentage (%) of 
+                        <p>Title/ Percentage (%) of
                             DOB Ownership</p>
                     </td>
                     <td colspan="1">
@@ -466,7 +526,7 @@
                     </td>
                 </tr>
             </tbody>
-        </table><br> 
+        </table><br>
         <table cellspacing="0" width="100%" class="personalinfo_table">
             <tbody>
                 <tr>
@@ -474,11 +534,20 @@
                 </tr>
                 <tr>
                     <p class="text">
-                        Each of the undersigned, who is either a Principal, Sole Proprietor or Personal Guarantor of the above-named business, recognizes that his or her individual credit history may be a tactor in the evaluation ot this
-                        application of the above named business for funding. Each of the undersigned hereby authorizes ATYG "steady capital solutions· and its assigns and/or affiliate partners of ATYG "steady capital solutions· to obtain
-                        his or her credit report (and any updates to his or her credit report) in connection with ATYG "steady capital solutions" consideration of this application and any affiliate partners of ATYG "steady capital solutions" in
-                        connection with any subsequent review of the account of the above-named business. Each of the undersigned hereby authorizes ATYG "steady capital solutions" to utilize information including but not limited to calls,
-                        emails, texts and direct mail for marketing efforts from ATYG "steady capital solutions· and affiliates.
+                        Each of the undersigned, who is either a Principal, Sole Proprietor or Personal Guarantor of the
+                        above-named business, recognizes that his or her individual credit history may be a tactor in
+                        the evaluation ot this
+                        application of the above named business for funding. Each of the undersigned hereby authorizes
+                        ATYG "steady capital solutions· and its assigns and/or affiliate partners of ATYG "steady
+                        capital solutions· to obtain
+                        his or her credit report (and any updates to his or her credit report) in connection with ATYG
+                        "steady capital solutions" consideration of this application and any affiliate partners of ATYG
+                        "steady capital solutions" in
+                        connection with any subsequent review of the account of the above-named business. Each of the
+                        undersigned hereby authorizes ATYG "steady capital solutions" to utilize information including
+                        but not limited to calls,
+                        emails, texts and direct mail for marketing efforts from ATYG "steady capital solutions· and
+                        affiliates.
                     </p>
                 </tr>
                 <tr>
@@ -503,7 +572,7 @@
                 </tr>
             </tbody>
         </table>
-    </body>
+</body>
 
 
 </html>

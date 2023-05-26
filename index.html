@@ -47,6 +47,8 @@
         }
         .reference {
             width: 100%; 
+            /* display: grid;
+            grid-template-columns: max-content max-content 1fr; */
         }
 
         @media only screen and (min-width: 320px) {
@@ -160,7 +162,7 @@
             margin-top: 10px;
             justify-content: end;
         }
-        .company {
+        .remove-border {
             border-left: 0px !important;
             border-right: 0px !important;
             border-top: 0px !important;
@@ -182,7 +184,13 @@
             display: inline-block;
             width: 186px;
             height: 20px;
-
+        }
+        .date_line {
+            border-bottom: 1px solid black;
+            display: inline-block;
+            min-width: 75px;
+            width: 100px;
+            height: 20px;
         }
         .combal{
             text-align: center;
@@ -318,8 +326,8 @@
                             <p>Seasonal Business?</p>
                             <table>
                                 <tr>
-                                    <td colspan="1" class="company "><input type="checkbox"><label>Yes</label></td>
-                                    <td colspan="1" class="company "><input type="checkbox"><label>No</label></td>
+                                    <td colspan="1" class="remove-border "><input type="checkbox"><label>Yes</label></td>
+                                    <td colspan="1" class="remove-border "><input type="checkbox"><label>No</label></td>
                                 </tr>
                             </table>
                         </div>
@@ -340,10 +348,10 @@
                             <p>Seasonal Business:</p>
                             <table>
                                 <tr>
-                                    <td class="company"><input type="checkbox"><label>Corporation</label></td>
-                                    <td class="company"><input type="checkbox"><label>Partnership</label></td>
-                                    <td class="company"><input type="checkbox"><label>Sole Proprietor</label></td>
-                                    <td class="company"><input type="checkbox"><label>LLC.</label></td>
+                                    <td class="remove-border"><input type="checkbox"><label>Corporation</label></td>
+                                    <td class="remove-border"><input type="checkbox"><label>Partnership</label></td>
+                                    <td class="remove-border"><input type="checkbox"><label>Sole Proprietor</label></td>
+                                    <td class="remove-border"><input type="checkbox"><label>LLC.</label></td>
                                 </tr>
                             </table>
                         </div>
@@ -464,14 +472,14 @@
                                 <div>
                                     <table class="companytbl">
                                         <tr>
-                                            <td colspan="1" class="company">
+                                            <td colspan="1" class="remove-border">
                                                 <p class="combal">Company</p>
                                                 <p><span class="number">1.</span> <span class="underline"></span></p>
                                                 <p><span class="number">2.</span> <span class="underline"></span></p>
                                                 <p><span class="number">3.</span> <span class="underline"></span></p>
                                                 <p><span class="number">4.</span> <span class="underline"></span></p>
                                             </td>
-                                            <td colspan="1" class="company ">
+                                            <td colspan="1" class="remove-border ">
                                                 <p class="combal">Balance</p>
                                                 <p class="balance"><span class="number">1.</span> <span
                                                         class="underline1"></span></p>
@@ -584,42 +592,46 @@
         <table cellspacing="0" width="100%" class="business_table">
             <tbody>
                 <tr>
-                    <h6><b>AUTHORIZATION</b></h6>
+                    <td colspan="8" class="remove-border">
+                        <h6><b>AUTHORIZATION</b></h6>
+                    </td>
                 </tr>
                 <tr>
-                    <p class="text">
-                        Each of the undersigned, who is either a Principal, Sole Proprietor or Personal Guarantor of the
-                        above-named business, recognizes that his or her individual credit history may be a tactor in
-                        the evaluation ot this
-                        application of the above named business for funding. Each of the undersigned hereby authorizes
-                        ATYG "steady capital solutions· and its assigns and/or affiliate partners of ATYG "steady
-                        capital solutions· to obtain
-                        his or her credit report (and any updates to his or her credit report) in connection with ATYG
-                        "steady capital solutions" consideration of this application and any affiliate partners of ATYG
-                        "steady capital solutions" in
-                        connection with any subsequent review of the account of the above-named business. Each of the
-                        undersigned hereby authorizes ATYG "steady capital solutions" to utilize information including
-                        but not limited to calls,
-                        emails, texts and direct mail for marketing efforts from ATYG "steady capital solutions· and
-                        affiliates.
-                    </p>
+                    <td colspan="8" class="remove-border">
+                        <span class="text">
+                            Each of the undersigned, who is either a Principal, Sole Proprietor or Personal Guarantor of the
+                            above-named business, recognizes that his or her individual credit history may be a tactor in
+                            the evaluation ot this
+                            application of the above named business for funding. Each of the undersigned hereby authorizes
+                            ATYG "steady capital solutions· and its assigns and/or affiliate partners of ATYG "steady
+                            capital solutions· to obtain
+                            his or her credit report (and any updates to his or her credit report) in connection with ATYG
+                            "steady capital solutions" consideration of this application and any affiliate partners of ATYG
+                            "steady capital solutions" in
+                            connection with any subsequent review of the account of the above-named business. Each of the
+                            undersigned hereby authorizes ATYG "steady capital solutions" to utilize information including
+                            but not limited to calls,
+                            emails, texts and direct mail for marketing efforts from ATYG "steady capital solutions· and
+                            affiliates.
+                        </span>
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="4" class="company">
+                    <td colspan="2" class="remove-border">
                         <p>X</p>
                         <p>Partner, Proprietor or Guarantor</p>
                     </td>
-                    <td colspan="4" class="company date">
-                        <p><span class="number">Date</span> <span class="underline1"></span></p>
+                    <td colspan="2" class="remove-border date">
+                        <p><span class="number">Date</span> <span class="date_line"></span></p>
 
                     </td>
-                    <td colspan="4" class="company">
+                    <td colspan="2" class="remove-border">
                         <p>X</p>
                         <p>Partner, Proprietor or Guarantor</p>
                     </td>
                     
-                    <td colspan="4" class="company date">
-                        <p><span class="number">Date</span> <span class="underline1"></span></p>
+                    <td colspan="2" class="remove-border date">
+                        <p><span class="number">Date</span> <span class="date_line"></span></p>
                     </td>
                 </tr>
             </tbody>

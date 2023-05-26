@@ -25,6 +25,44 @@
                 margin: auto;
             }
         }
+        @media only screen and (max-width: 768px) {
+            .qualifying_questions {
+                flex-direction: column;
+            }
+
+            .questions_box1 {
+                border-right: none;
+                margin-bottom: 10px; 
+                border-bottom: 1px solid black; 
+            }
+
+            .questions_box2 {
+                border-right: none;
+            }
+        }
+        @media only screen and ( min-width: 769px) {
+            .questions_box1 {
+                border-right: 1px solid black; 
+            }
+        }
+        .reference {
+            width: 100%; 
+        }
+
+        @media only screen and (min-width: 320px) {
+            .reference {
+                /* width: 175%;  */
+            }
+        }
+        .personalinfo {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 320px) {
+            .personalinfo {
+                /* width: 205% !important;  */
+            }
+        }
 
         .state {
             border-left: 0px !important;
@@ -118,33 +156,46 @@
         .year {
             border-bottom: 1px solid;
             height: 12px;
-            width: 80px;
+            width: 165px;
             margin-top: 10px;
             justify-content: end;
         }
-
         .company {
             border-left: 0px !important;
             border-right: 0px !important;
             border-top: 0px !important;
             border-bottom: 0px !important;
         }
-
+        /* .seasonal{
+            margin-left:100px; 
+             padding-right: 70px !important;
+        } */
         .underline {
             border-bottom: 1px solid black;
             display: inline-block;
-            width: 150px;
+            width: 300px;
+            height: 20px;
         }
 
         .underline1 {
             border-bottom: 1px solid black;
             display: inline-block;
-            width: 70px;
+            width: 186px;
+            height: 20px;
+
         }
-
-        /* .date{
-
-        } */
+        .combal{
+            text-align: center;
+        }
+        .right-aligned{
+            float: right;
+            margin-left: 43px;
+        }
+        .companytbl{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left:-10px;
+        }
         .applicant_table tr td {
             border: 1px solid black;
             padding: 5px 10px;
@@ -161,19 +212,18 @@
             margin-top: 1px;
             line-height: normal;
         }
+        .seasonal {
+            align-items: end;
+        }
+
+        .seasonal input[type="checkbox"] {
+            margin-left: -100px; 
+        }
 
         .text {
             font-size: 10px;
             width: 100%;
         }
-
-        @media only screen and (min-width: 520px) and (max-width: 700px) {
-            #mobile {
-                display: none;
-                background-color: aqua;
-            }
-        }
-
         .qualifying_questions_td {
             padding: 0 !important;
         }
@@ -184,9 +234,6 @@
             flex-basis: 50%;
             padding: 10px;
         }
-        .questions_box {
-            border-right: 1px solid black;
-        }
     </style>
 </head>
 
@@ -195,10 +242,10 @@
         <table cellspacing="0" width="100%">
             <tbody>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="8">
                         <h1><b>BUSINESS INFORMATION</b></h1>
                     </td>
-                    <td colspan="1" align="right">
+                    <td align="right">
                         <img src="scs.jpg" alt="steady capital solutions" class="scs_image" height="100">
                     </td>
                 </tr>
@@ -259,21 +306,22 @@
                         <p>City</p>
                     </td>
                     <td colspan="1" class="state">
-                        <span>State</span>
+                        <p>State</p>
                     </td>
                     <td colspan="1" class="zip">
-                        <span>Zip</span>
+                        <p>Zip</p>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3">
                         <div class="questions">
                             <p>Seasonal Business?</p>
-                            <p>
-                                <input type="checkbox"><label>Yes</label>
-                                <span>&nbsp;&nbsp;</span>
-                                <input type="checkbox"><label>No</label>
-                            </p>
+                            <table>
+                                <tr>
+                                    <td colspan="1" class="company "><input type="checkbox"><label>Yes</label></td>
+                                    <td colspan="1" class="company "><input type="checkbox"><label>No</label></td>
+                                </tr>
+                            </table>
                         </div>
                     </td>
                     <td colspan="1">
@@ -290,12 +338,14 @@
                     <td colspan="4">
                         <div class="questions">
                             <p>Seasonal Business:</p>
-                            <p>
-                                <input type="checkbox"><label>Corporation</label>
-                                <input type="checkbox"><label>Partnership</label>
-                                <input type="checkbox"><label>Sole Proprietor</label>
-                                <input type="checkbox"><label>LLC.</label>
-                            </p>
+                            <table>
+                                <tr>
+                                    <td class="company"><input type="checkbox"><label>Corporation</label></td>
+                                    <td class="company"><input type="checkbox"><label>Partnership</label></td>
+                                    <td class="company"><input type="checkbox"><label>Sole Proprietor</label></td>
+                                    <td class="company"><input type="checkbox"><label>LLC.</label></td>
+                                </tr>
+                            </table>
                         </div>
                     </td>
                     <td colspan="2">
@@ -315,35 +365,39 @@
                 </tr>
             </tbody>
         </table><br>
-        <table cellspacing="0" width="100%" class="personalinfo_table">
-            <tbody>
-                <tr>
-                    <td colspan="8" class="title">
-                        <h2><b>REFERENCES</b></h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="4">
-                        <p>Landlord Contact Name and Number</p>
-                    </td>
-                    <td colspan="2">
-                        <p>Length of Time at Location</p>
-                    </td>
-                    <td colspan="2">
-                        <p>Time Remaining on Lease</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="4">
-                        <p>Trade Reference # 1 Contact Name and Number</p>
-                    </td>
-                    <td colspan="4">
-                        <p>Trade Reference # 2 Contact Name and Number</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table><br>
-        <table cellspacing="0" id="moblie" width="100%" class="personalinfo_table">
+        <div class="reference">
+            <table cellspacing="0" class="business_table ">
+                <tbody>
+                    <tr>
+                        <td colspan="12" class="title">
+                            <h2><b>REFERENCES </b></h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <p>Landlord Contact Name and Number</p>
+                        </td>
+                        <td colspan="2">
+                            <p>Length of Time at Location</p>
+                        </td>
+                        <td colspan="2">
+                            <p>Time Remaining on Lease</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <p>Trade Reference # 1 Contact Name and Number</p>
+                        </td>
+                        <td colspan="4">
+                            <p>Trade Reference # 2 Contact Name and Number</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><br> 
+        </div>
+           
+                 
+        <table cellspacing="0" width="100%" id="mobile" class="business_table">
             <tbody>
                 <tr>
                     <td colspan="8" class="title">
@@ -353,7 +407,7 @@
                 <tr>
                     <td colspan="8" class="qualifying_questions_td">
                         <div class="qualifying_questions">
-                            <div class="questions_box">
+                            <div class="questions_box1">
                                 <div class="questions">
                                     <p>Do you own any commercial or residential property?</p>
                                     <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label>
@@ -395,30 +449,30 @@
                                             type="checkbox"><label>Dismissed</label></p>
                                 </div>
                                 <div class="ques">
-                                    <p>Bankruptcy Year :&nbsp;</p>
+                                    <p class="right-aligned">Bankruptcy Year :&nbsp;&nbsp;</p>
                                     <p class="year"></p>
                                 </div>
                             </div>
 
-                            <div>
-                                <div class="ques">
+                            <div class="questions_box2">
+                                <div class="questions">
                                     <p>Do you own any commercial or residential property? &nbsp;&nbsp;</p>
                                     <p class="checkbox"><input type="checkbox"><label>Yes</label><input
                                             type="checkbox"><label>No</label></p>
                                 </div>
                                 <p>If yes, which advance company and what is your current balance?</p>
                                 <div>
-                                    <table>
+                                    <table class="companytbl">
                                         <tr>
                                             <td colspan="1" class="company">
-                                                <p>Company</p>
+                                                <p class="combal">Company</p>
                                                 <p><span class="number">1.</span> <span class="underline"></span></p>
                                                 <p><span class="number">2.</span> <span class="underline"></span></p>
                                                 <p><span class="number">3.</span> <span class="underline"></span></p>
                                                 <p><span class="number">4.</span> <span class="underline"></span></p>
                                             </td>
                                             <td colspan="1" class="company ">
-                                                <p>Balance</p>
+                                                <p class="combal">Balance</p>
                                                 <p class="balance"><span class="number">1.</span> <span
                                                         class="underline1"></span></p>
                                                 <p class="balance"><span class="number">2.</span> <span
@@ -439,11 +493,11 @@
             </tbody>
         </table><br>
 
-        <table cellspacing="0" width="100%" class="personalinfo_table">
+        <table cellspacing="0" id="personalinfo"  width="100%" class="personalinfo_table">
             <tbody>
                 <tr>
-                    <td colspan="8" class="title">
-                        <h2><b>PERSONAL INFORMATION ON PARTNERS, PROPRIETORS, OR GUARANTOR</b></h2>
+                    <td colspan="12" class="title">
+                        <h2><b>PERSONAL INFORMATION ON PARTNERS,PROPRIETORS, OR GUARANTOR</b></h2>
                     </td>
                 </tr>
                 <tr>
@@ -527,7 +581,7 @@
                 </tr>
             </tbody>
         </table><br>
-        <table cellspacing="0" width="100%" class="personalinfo_table">
+        <table cellspacing="0" width="100%" class="business_table">
             <tbody>
                 <tr>
                     <h6><b>AUTHORIZATION</b></h6>
@@ -551,27 +605,26 @@
                     </p>
                 </tr>
                 <tr>
-                    <td colspan="4" class="company date">
-                        <p><span class="number">Date</span> <span class="underline1"></span></p>
-
-                    </td>
-                    <td colspan="4" class="company date">
-                        <p><span class="number">Date</span> <span class="underline1"></span></p>
-                    </td>
-                </tr>
-
-                <tr>
                     <td colspan="4" class="company">
                         <p>X</p>
                         <p>Partner, Proprietor or Guarantor</p>
                     </td>
+                    <td colspan="4" class="company date">
+                        <p><span class="number">Date</span> <span class="underline1"></span></p>
+
+                    </td>
                     <td colspan="4" class="company">
                         <p>X</p>
                         <p>Partner, Proprietor or Guarantor</p>
+                    </td>
+                    
+                    <td colspan="4" class="company date">
+                        <p><span class="number">Date</span> <span class="underline1"></span></p>
                     </td>
                 </tr>
             </tbody>
         </table>
+    </div>
 </body>
 
 

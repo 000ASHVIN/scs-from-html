@@ -16,17 +16,25 @@
             font-size: 16px;
         }
 
+        h5 {
+            margin: 0;
+            margin-top: 10px;
+        }
         p {
             margin-top: 0;
             font-size: 11px;
         }
 
-        @media (min-width: 1200px) {
+        label {
+            font-size: 11px;
+        }
+
+        /* @media (min-width: 850) { */
             .container {
                 max-width: 850px;
                 margin: auto;
             }
-        }
+        /* } */
         @media only screen and (max-width: 768px) {
             .qualifying_questions {
                 flex-direction: column;
@@ -94,6 +102,10 @@
             grid-template-columns: 1fr auto;
         }
 
+        .questions p {
+            margin-bottom: 0;
+        }
+
         .questions p:last-child {
             justify-self: end;
         }
@@ -121,6 +133,7 @@
             border-collapse: collapse;
             border-spacing: 0;
             width: 100%;
+            margin-bottom: 10px;
         }
 
         .business_table tr  td {
@@ -138,6 +151,15 @@
         .padding-top-0 {
             padding-top: 0 !important;
         }
+
+        .padding-0 {
+            padding: 0 !important;
+        }
+
+        .business-checkboxes * {
+            font-size: 11px !important;
+        }
+
         .business_table .title {
             background-color: #0171bc;
             color: white;
@@ -185,18 +207,26 @@
         .underline {
             border-bottom: 1px solid black;
             display: inline-block;
-            width: 300px;
+            width: 100%;
             height: 20px;
+        }
+
+        .ol_padding {
+            padding-left: 10px;
+        }
+
+        .list-style-type-none {
+            list-style-type:none;
         }
 
         .underline1 {
             border-bottom: 1px solid black;
             display: inline-block;
-            width: 186px;
-            height: 20px;
+            /* width: 186px; */
+            /* height: 20px; */
         }
         .date_line {
-            border-bottom: 1px solid black;
+            /* border-bottom: 1px solid black; */
             display: inline-block;
             min-width: 75px;
             width: 100px;
@@ -239,7 +269,7 @@
         }
 
         .text {
-            font-size: 10px;
+            font-size: 9px;
             width: 100%;
         }
         .qualifying_questions_td {
@@ -331,7 +361,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3" valign="top" width="35%" class="padding-top-0">
+                    <td colspan="3" valign="top" width="35%" class="padding-top-0 business-checkboxes">
                         <table cellspacing="0" width="100%" class="no-border">
                             <tbody>
                                 <tr>
@@ -369,12 +399,12 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4" class="padding-top-0">
+                    <td colspan="4" class="padding-top-0 business-checkboxes">
                         <table cellspacing="0" width="100%" class="no-border">
                             <tbody>
                                 <tr>
                                     <td>
-                                        Seasonal Business:
+                                        Style of Business:
                                     </td>
                                     <td>
                                         <table>
@@ -428,7 +458,7 @@
                     </td>
                 </tr>
             </tbody>
-        </table><br>
+        </table>
         <div class="reference">
             <table cellspacing="0" class="business_table ">
                 <tbody>
@@ -457,7 +487,7 @@
                         </td>
                     </tr>
                 </tbody>
-            </table><br> 
+            </table> 
         </div>
            
                  
@@ -469,9 +499,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="8" class="qualifying_questions_td">
-                        <div class="qualifying_questions">
-                            <div class="questions_box1">
+                    <td colspan="4" class="" valign="top" width="50%">
+                        <div class="">
+                            <div class="">
                                 <div class="questions">
                                     <p>Do you own any commercial or residential property?</p>
                                     <p><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label>
@@ -517,143 +547,150 @@
                                     <p class="year"></p>
                                 </div>
                             </div>
-
-                            <div class="questions_box2">
-                                <div class="questions">
-                                    <p>Do you own any commercial or residential property? &nbsp;&nbsp;</p>
-                                    <p class="checkbox"><input type="checkbox"><label>Yes</label><input
-                                            type="checkbox"><label>No</label></p>
-                                </div>
-                                <p>If yes, which advance company and what is your current balance?</p>
-                                <div>
-                                    <table class="companytbl">
-                                        <tr>
-                                            <td colspan="1" class="remove-border">
-                                                <p class="combal">Company</p>
-                                                <p><span class="number">1.</span> <span class="underline"></span></p>
-                                                <p><span class="number">2.</span> <span class="underline"></span></p>
-                                                <p><span class="number">3.</span> <span class="underline"></span></p>
-                                                <p><span class="number">4.</span> <span class="underline"></span></p>
-                                            </td>
-                                            <td colspan="1" class="remove-border ">
-                                                <p class="combal">Balance</p>
-                                                <p class="balance"><span class="number">1.</span> <span
-                                                        class="underline1"></span></p>
-                                                <p class="balance"><span class="number">2.</span> <span
-                                                        class="underline1"></span></p>
-                                                <p class="balance"><span class="number">3.</span> <span
-                                                        class="underline1"></span></p>
-                                                <p class="balance"><span class="number">4.</span> <span
-                                                        class="underline1"></span></p>
-                                            </td>
-
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
                         </div>
+                    </td>
+
+                    <td colspan="4" class="" valign="top" width="50%">
+                        <table cellspacing="0" width="100%" class="no-border">
+                            <tr>
+                                <td colspan="8">
+                                    <div class="questions">
+                                        <p>Do you own any commercial or residential property? &nbsp;&nbsp;</p>
+                                        <p class="checkbox"><input type="checkbox"><label>Yes</label><input
+                                                type="checkbox"><label>No</label></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="8">
+                                    <p>If yes, which advance company and what is your current balance?</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" valign="top" width="60%">
+                                    <p class="combal">Company</p>
+                                    <ol class="ol_padding">
+                                        <li><span class="underline"></span></li>
+                                        <li><span class="underline"></span></li>
+                                        <li><span class="underline"></span></li>
+                                        <li><span class="underline"></span></li>
+                                    </ol>
+                                </td>
+                                <td valign="top" width="5%"></td>
+                                <td colspan="3" valign="top" width="35%">
+                                    <p class="combal">Balance</p>
+                                    <ol class="ol_padding list-style-type-none">
+                                        <li><span class="underline"></span></li>
+                                        <li><span class="underline"></span></li>
+                                        <li><span class="underline"></span></li>
+                                        <li><span class="underline"></span></li>
+                                    </ol>
+                                </td>
+
+                            </tr>
+                        </table>
                     </td>
                 </tr>
             </tbody>
-        </table><br>
+        </table>
 
         <table cellspacing="0" id="personalinfo"  width="100%" class="personalinfo_table">
             <tbody>
                 <tr>
                     <td colspan="12" class="title">
-                        <h2><b>PERSONAL INFORMATION ON PARTNERS,PROPRIETORS, OR GUARANTOR</b></h2>
+                        <h2><b>PERSONAL INFORMATION ON PARTNERS, PROPRIETORS, OR GUARANTOR</b></h2>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="4" valign="top" width="30%">
                         <p>Name</p>
                     </td>
-                    <td colspan="1">
+                    <td colspan="2" valign="top" width="20%">
                         <p>Credit Score (If Known)</p>
                     </td>
-                    <td colspan="2">
+                    <td colspan="4" valign="top" width="30%">
                         <p>Name</p>
                     </td>
-                    <td colspan="1">
+                    <td colspan="2" valign="top" width="20%">
                         <p>Personal Annual Revenue</p>
                     </td>
 
                 </tr>
                 <tr>
-                    <td colspan="1">
+                    <td colspan="2">
                         <p>Title/ Percentage (%) of
                             DOB Ownership</p>
-                    </td>
-                    <td colspan="1">
-                        <p>Social Security No</p>
-                    </td>
-                    <td colspan="1">
-                        <p>DOB</p>
-                    </td>
-                    <td colspan="1">
-                        <p>Title/ Percentage (%) of
-                            DOB Ownership</p>
-                    </td>
-                    <td colspan="1">
-                        <p>Social Security No</p>
-                    </td>
-                    <td colspan="1">
-                        <p>DOB</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <p>Address</p>
-                    </td>
-                    <td colspan="3">
-                        <p>Address</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="1" class="city">
-                        <p>City/Country</p>
-                    </td>
-                    <td colspan="1" class="state">
-                        <p>State</p>
-                    </td>
-                    <td colspan="1" class="zip">
-                        <p>Zip</p>
-                    </td>
-                    <td colspan="1" class="city">
-                        <p>City/Country</p>
-                    </td>
-                    <td colspan="1" class="state">
-                        <p>State</p>
-                    </td>
-                    <td colspan="1" class="zip">
-                        <p>Zip</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="1">
-                        <p>Home Phone Number</p>
                     </td>
                     <td colspan="2">
+                        <p>Social Security No</p>
+                    </td>
+                    <td colspan="2">
+                        <p>DOB</p>
+                    </td>
+                    <td colspan="2">
+                        <p>Title/ Percentage (%) of
+                            DOB Ownership</p>
+                    </td>
+                    <td colspan="2">
+                        <p>Social Security No</p>
+                    </td>
+                    <td colspan="2">
+                        <p>DOB</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <p>Address</p>
+                    </td>
+                    <td colspan="6">
+                        <p>Address</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="city">
+                        <p>City/Country</p>
+                    </td>
+                    <td colspan="2" class="state">
+                        <p>State</p>
+                    </td>
+                    <td colspan="2" class="zip">
+                        <p>Zip</p>
+                    </td>
+                    <td colspan="2" class="city">
+                        <p>City/Country</p>
+                    </td>
+                    <td colspan="2" class="state">
+                        <p>State</p>
+                    </td>
+                    <td colspan="2" class="zip">
+                        <p>Zip</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Home Phone Number</p>
+                    </td>
+                    <td colspan="4">
                         <p>Rent /Own (How Long)</p>
                     </td>
-                    <td colspan="1">
+                    <td colspan="2">
                         <p>Home Phone Number</p>
                     </td>
-                    <td colspan="2">
+                    <td colspan="4">
                         <p>Rent /Own (How Long)</p>
                     </td>
                 </tr>
             </tbody>
-        </table><br>
-        <table cellspacing="0" width="100%" class="business_table">
+        </table>
+        <table cellspacing="0" width="100%" class="">
             <tbody>
                 <tr>
-                    <td colspan="8" class="remove-border">
-                        <h6><b>AUTHORIZATION</b></h6>
+                    <td colspan="9" class="remove-border">
+                        <h5><b>AUTHORIZATION</b></h5>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="8" class="remove-border">
+                    <td colspan="9" class="remove-border">
                         <span class="text">
                             Each of the undersigned, who is either a Principal, Sole Proprietor or Personal Guarantor of the
                             above-named business, recognizes that his or her individual credit history may be a tactor in
@@ -674,15 +711,18 @@
                 </tr>
                 <tr>
                     <td colspan="2" class="remove-border">
-                        <p>X</p>
+                        <img src="sign.jpeg" alt="signture">
                         <p>Partner, Proprietor or Guarantor</p>
                     </td>
                     <td colspan="2" class="remove-border date">
                         <p><span class="number">Date</span> <span class="date_line"></span></p>
 
                     </td>
+                    <td width="1%">
+                        
+                    </td>
                     <td colspan="2" class="remove-border">
-                        <p>X</p>
+                        <img src="sign.jpeg" alt="signture">
                         <p>Partner, Proprietor or Guarantor</p>
                     </td>
                     

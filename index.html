@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>BUSINESS INFORMATION</title>
     <style>
@@ -13,15 +13,17 @@
 
         h2 {
             margin: 0;
+            font-size: 16px;
         }
 
         p {
             margin-top: 0;
+            font-size: 11px;
         }
 
         @media (min-width: 1200px) {
             .container {
-                max-width: 1140px;
+                max-width: 850px;
                 margin: auto;
             }
         }
@@ -121,13 +123,21 @@
             width: 100%;
         }
 
-        .business_table tr td {
+        .business_table tr  td {
             border: 1px solid black;
             padding: 5px 10px;
             font-size: 12px;
             height: 25px;
         }
 
+        .no-border tr  td {
+            border: unset;
+            padding: 0;
+        }
+
+        .padding-top-0 {
+            padding-top: 0 !important;
+        }
         .business_table .title {
             background-color: #0171bc;
             color: white;
@@ -137,7 +147,7 @@
             border-collapse: collapse;
         }
 
-        .personalinfo_table tr td {
+        .personalinfo_table tr > td {
             border: 1px solid black;
             padding: 5px 10px;
             font-size: 12px;
@@ -321,40 +331,86 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div class="questions">
-                            <p>Seasonal Business?</p>
-                            <table>
+                    <td colspan="3" valign="top" width="35%" class="padding-top-0">
+                        <table cellspacing="0" width="100%" class="no-border">
+                            <tbody>
                                 <tr>
-                                    <td colspan="1" class="remove-border "><input type="checkbox"><label>Yes</label></td>
-                                    <td colspan="1" class="remove-border "><input type="checkbox"><label>No</label></td>
+                                    <td>
+                                        Seasonal Business?
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td> <label>Yes</label> </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td> <label>No</label> </td>
+                                            </tr>
+                                        </table>
+                                    </td>
                                 </tr>
-                            </table>
-                        </div>
+                            </tbody>
+                        </table>
                     </td>
-                    <td colspan="1">
+                    <td colspan="1" valign="top" width="15%">
                         <p>Tax ID Number</p>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" valign="top" width="25%">
                         <p>State</p>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" valign="top" width="25%">
                         <p>Nature of Business</p>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4">
-                        <div class="questions">
-                            <p>Seasonal Business:</p>
-                            <table>
+                    <td colspan="4" class="padding-top-0">
+                        <table cellspacing="0" width="100%" class="no-border">
+                            <tbody>
                                 <tr>
-                                    <td class="remove-border"><input type="checkbox"><label>Corporation</label></td>
-                                    <td class="remove-border"><input type="checkbox"><label>Partnership</label></td>
-                                    <td class="remove-border"><input type="checkbox"><label>Sole Proprietor</label></td>
-                                    <td class="remove-border"><input type="checkbox"><label>LLC.</label></td>
+                                    <td>
+                                        Seasonal Business:
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td> <label>Corporation</label> </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td> <label>Partnership</label> </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td> <label>Sole Proprietor</label> </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td> <label>LLC.</label> </td>
+                                            </tr>
+                                        </table>
+                                    </td>
                                 </tr>
-                            </table>
-                        </div>
+                            </tbody>
+                        </table>
                     </td>
                     <td colspan="2">
                         <p>Monthly Total Sales</p>

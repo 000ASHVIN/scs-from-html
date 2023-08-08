@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .headertable{
+            width: max-content !important;
+            color: #FFFF;
+            margin-bottom: 0px !important;
+            height: 100%;
+        }
+        .th{
+           
+            border: 1px !important;
+            color: #FFFF;
+            background-color: rgb(18, 18, 102);
+            margin-bottom: 0px;
+            border-top-right-radius : 5px !important;
+            border-top-left-radius : 5px !important;
+            border-bottom: 0px !important;
+        }
+        .raw {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ta{
+            color: #FFFF;
+            background-color: rgb(12, 12, 194);
+            margin-bottom: 0px;
+            border-bottom: 0px !important;
+            padding: 0px !important;
+            border: 1px !important;
+        }
+
+        .td{
+            border: 1px !important;
+            color: #FFFF;
+            background-color: rgb(7, 136, 211);
+            margin-bottom: 0px;
+            border-top-right-radius : 5px !important;
+            border-top-left-radius : 5px !important;
+            border-bottom: 0px !important;
+        }
+
+        .tp{
+            color: #FFFF;
+            background-color: rgb(194, 167, 12);
+            margin-bottom: 0px;
+            border-bottom: 0px !important;
+            padding: 0px !important;
+            border: 1px !important;
+        }
+
+        
+        
+        .table-container {
+            display: flex;
+            width: 100%;
+        }
+        
+        .table-column {
+            flex: 1;
+            padding: 10px;
+        }
+        
+        .tabal {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .bt{
+            border: 0px !important;
+            padding: 0px !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-3" style="border: 0px;">
+            <div class="card-body mt-1 pb-0" style=" background-color: rgb(99, 87, 209);">
+                <div class="row raw" style="justify-content: space-between;">
+
+                    <table class="table headertable" style="width: 100% !important;">
+                        <thead>
+                            <tr>
+                                <th style="height: 40px !important;display:flex;justify-content: space-between;flex-wrap: wrap-reverse;" class="ta" >
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Customers</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Reports</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Leads</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Quotes</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Directory</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Dealers</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Parts</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Shops</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">D1</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">D2</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Task(19)</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="th">Logout</th>
+                                            </tr>
+                                        </thead>
+                                    </table>       
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="row mt-3">
+                    <table class="table" style="width: 100% !important;">
+                        <thead>
+                            <tr>
+                                <th style="height: 45px !important;" class="ta">
+                                    
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-2" style="border: 0px !important;">
+            <div class="card-body pb-0 pt-0" style="background-color: rgb(100, 179, 243); display: flex; flex-wrap: wrap;">
+                <div class="table-container" style="flex-basis:20%; max-width:20%;">
+                    <table class="table tabal">
+                        <thead>
+                            <tr>
+                                <td class="bt" style="font-weight: normal;">
+                                    Policy #473416217
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="bt">
+                                Narendra R. Korisapati
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="bt"> Customer 
+                                    <span style="font-weight: normal;">Address</span></th>
+                            </tr>
+                            <tr>
+                                <th class="bt">
+                                    5527 Kenton Bluff
+                                    <div>
+                                        San Antonio,TX 78240
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="bt" style="font-weight: normal;padding-top:40px !important">
+                                    <a href="">All External Tasks</a>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-container" style="flex-basis:10%; max-width:10%;justify-content: flex-start;">
+                    <table class="table tabal">
+                        <thead>
+                            <tr>
+                                <td class="bt">
+                                    <b>Year: 1997</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt">
+                                    <b>Make: Honda</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt"> 
+                                    <b>Model: Civic</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt">
+                                  <b>Vin: tyvh75846964</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt">
+                                    <b>Miles : 55987</b>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-container" style="flex-basis:45%; max-width:45%;justify-content: flex-end;">
+                    <table class="table tabal">
+                        <thead>
+                            <tr>
+                                <td class="bt">
+                                    E: Narendra kota@gmail.com
+                                   <div>
+                                    Primary: 2140506052
+                                   </div>
+                                   Secondary: 4562101247  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt">
+                                    Active Accounts: 1 of 1 <a href="">Other Accounts</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="bt">
+                                    Other Quotes: <a href="">2</a>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="bt">
+                                    Sale Date: 09/08/2015
+                                </td>
+                            </tr>
+                            <tr style="color: red;">
+                                <th class="bt" >
+                                    Contract Term:<span style="justify-content: flex-end;">01/02/2021 - 01/02/2022</span>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-container ml-5" style="flex-basis:20%; max-width: 20%;">
+                    <table class="table tabal">
+                        <thead>
+                            <tr>
+                                <td class="bt">
+                                    <b>Plan Type: Gold</b>
+                                    <div>
+                                        <b>Free Months: 6</b>
+                                    </div>
+                                    <b>Additional mileage: 50000</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt">
+                                  <b>Deductable:$100</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt">
+                                    <b>Price:$2500</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt">
+                                   <b>Payments/Full</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt">
+                                    <b>Account Status:</b> <span style="color: green;"><b>Active</b></span>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-2">
+            <div class="card-body">
+                <div class="row raw" style="justify-content: space-between;">
+
+                    <table class="table headertable" style="width: 100% !important;">
+                        <thead>
+                            <tr>
+                                <th style="display:flex;justify-content: space-between;flex-wrap: wrap;" class="tp" >
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Notes</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Billing</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Update Billing</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Add New Claims</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Existing Claims</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Files</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">E-mail</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Status</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Changes</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Letters</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                
+                                    <table class="table headertable">
+                                        <thead>
+                                            <tr>
+                                                <th class="td"><a href="" style="color:#ffff">Edit</a></th>
+                                            </tr>
+                                        </thead>
+                                    </table>  
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -4,6 +4,12 @@
   margin-bottom: 0px !important;
   height: 100%;
 }
+.secondHeadertable{
+  width: max-content !important;
+  color: #ffff;
+  margin-bottom: 0px !important;
+  height: 100%;
+}
 .th {
   border: 1px !important;
   color: #ffff;
@@ -87,10 +93,7 @@ table.notes th {
   border-top-left-radius: 5px !important;
   border-bottom: 0px !important;
 }
-.raw {
-  display: flex;
-  justify-content: space-between;
-}
+
 .ta {
   color: #ffff;
   background-color: rgb(12, 12, 194);
@@ -114,6 +117,7 @@ table.notes th {
 
 .thtext {
   padding: 3px !important;
+  border-top: 0px !important;
 }
 
 .effect tr:nth-child(even) {
@@ -121,9 +125,10 @@ table.notes th {
 }
 
 .trtext {
-  background-color: #351abe;
+  background-color: #0936b1;
   padding: 3px !important;
   color: white;
+  border-top: 0px !important;
 }
 .underline {
   text-decoration: underline;
@@ -138,6 +143,38 @@ table.auto_post .trtext {
 }
 
 
+.navbar {
+  display: none;
+}
+
+.navbar .nav-link {
+  color: white;
+  background-color: rgb(18, 18, 102);
+  padding-left: 10px;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+}
+/* .navbar-collapse {
+  justify-content: flex-end !important;
+} */
 
 
-
+@media screen and (max-width: 768px) {
+ 
+  .navbar {
+    display: block !important;
+    width: 100%;
+  }
+  .headertable {
+      display: none !important;
+  }
+}
+.padding{
+  border: 0px !important;
+  padding-top: 5px !important;
+  padding-bottom: 0px !important;
+}
+.border{
+  border: 0px !important;
+}

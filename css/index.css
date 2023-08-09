@@ -123,6 +123,12 @@ table.notes th {
 .effect tr:nth-child(even) {
   background-color: #bdbdbd;
 }
+.yelloweffect tr:nth-child(odd) {
+  background-color: #faec6f;
+}
+.yelloweffect tr:nth-child(even) {
+  background-color: #fffad2;
+}
 
 .trtext {
   background-color: #0936b1;
@@ -132,7 +138,6 @@ table.notes th {
 }
 .underline {
   text-decoration: underline;
-  color: rgb(4, 0, 255);
 }
 .effect2 tr:nth-child(even) {
   background-color: rgb(195, 185, 216);
@@ -173,8 +178,18 @@ table.auto_post .trtext {
 .padding{
   border: 0px !important;
   padding-top: 5px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: 5px !important;
 }
 .border{
+  border: 0px !important;
+}
+.addborder{
+  border-top: 1px solid #000 !important;
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+.removepadding{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
   border: 0px !important;
 }

@@ -1,0 +1,138 @@
+.headertable {
+  width: max-content !important;
+  color: #ffff;
+  margin-bottom: 0px !important;
+  height: 100%;
+}
+.th {
+  border: 1px !important;
+  color: #ffff;
+  background-color: rgb(18, 18, 102);
+  margin-bottom: 0px;
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom: 0px !important;
+}
+.raw {
+  display: flex;
+  justify-content: space-between;
+}
+.ta {
+  color: #ffff;
+  background-color: rgb(12, 12, 194);
+  margin-bottom: 0px;
+  border-bottom: 0px !important;
+  padding: 0px !important;
+  border: 1px !important;
+}
+
+.td {
+  border: 1px !important;
+  color: #ffff;
+  background-color: rgb(7, 136, 211);
+  margin-bottom: 0px;
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom: 0px !important;
+}
+
+.tp {
+  color: #ffff;
+  background-color: rgb(194, 167, 12);
+  margin-bottom: 0px;
+  border-bottom: 0px !important;
+  padding: 0px !important;
+  border: 1px !important;
+}
+
+.table-container {
+  display: flex;
+  width: 100%;
+}
+
+.table-column {
+  flex: 1;
+  padding: 10px;
+}
+
+.tabal {
+  width: 100%;
+  border-collapse: collapse;
+}
+.bt {
+  border: 0px !important;
+  padding: 0px !important;
+}
+table.notes th {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+table.notes th {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+.headertable {
+  width: max-content !important;
+  color: #ffff;
+  margin-bottom: 0px !important;
+  height: 100%;
+}
+.th {
+  border: 1px !important;
+  color: #ffff;
+  background-color: rgb(18, 18, 102);
+  margin-bottom: 0px;
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom: 0px !important;
+}
+.raw {
+  display: flex;
+  justify-content: space-between;
+}
+.ta {
+  color: #ffff;
+  background-color: rgb(12, 12, 194);
+  margin-bottom: 0px;
+  border-bottom: 0px !important;
+  padding: 0px !important;
+  border: 1px !important;
+}
+
+.bordercolor {
+  border: 1px solid rgb(61, 58, 58);
+}
+.button5 {
+  border-radius: 12px;
+  background-color: rgb(202, 202, 202);
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.thtext {
+  padding: 3px !important;
+}
+
+.effect tr:nth-child(even) {
+  background-color: #bdbdbd;
+}
+
+.trtext {
+  background-color: #351abe;
+  padding: 3px !important;
+  color: white;
+}
+.underline {
+  text-decoration: underline;
+  color: rgb(4, 0, 255);
+}
+.effect2 tr:nth-child(even) {
+  background-color: rgb(195, 185, 216);
+}
+
+table.auto_post .trtext {
+    background-color: rgb(194, 167, 12);
+}

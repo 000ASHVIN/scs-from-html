@@ -193,3 +193,7 @@ table.auto_post .trtext {
   padding-bottom: 0px !important;
   border: 0px !important;
 }
+.content-with-border {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px; 
+}

@@ -261,3 +261,12 @@ table.auto_post .trtext {
 .th1, .td1 {
   border-bottom: 2px solid #ada7a7;
 }
+
+.authorization td {
+  border: 0;
+  padding: 0;
+}
+
+.current_claim .trtext {
+  background-color: green;
+}

@@ -193,28 +193,29 @@ table.auto_post .trtext {
   padding-bottom: 0px !important;
   border: 0px !important;
 }
-.color{
+
+.details .color{
   color: rgb(109, 105, 105);
   font-weight: normal;
   font-size:large !important;
 }
-.btncolor{
+.details .btncolor{
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size:large !important;
 }
-.txtcolor{
+.details .txtcolor{
   color:rgb(33, 165, 241);
 }
-.nav-tabs .nav-link {
+.details .nav-tabs .nav-link {
   border: none; 
 }
 
-.nav-tabs .nav-link.active {
+.details .nav-tabs .nav-link.active {
   border-bottom: 3px solid #5663af;
 }
 
-.tab-content .tab-pane {
+.details .tab-content .tab-pane {
   display: none; 
 }
 .button {

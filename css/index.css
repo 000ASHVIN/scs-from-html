@@ -217,3 +217,46 @@ table.auto_post .trtext {
 .tab-content .tab-pane {
   display: none; 
 }
+.button {
+  background-color: #368bb3; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.tata {
+  background-color: #faec6f;
+  border-bottom: 0px !important;
+  padding:5px !important;
+  border: 1px !important;
+  color: #0f3dbb;
+  text-align: center;
+}
+.underline{
+  text-decoration: underline;
+}
+.addcolor{
+  background-color: rgb(236, 229, 229);
+  text-align: center;
+}
+.addbtn{
+  background-color: rgb(17, 17, 218);
+  border: none;
+  color: white;
+  padding: 4px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+}
+.th1, .td1 {
+  border-bottom: 2px solid #ada7a7;
+}

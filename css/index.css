@@ -193,7 +193,27 @@ table.auto_post .trtext {
   padding-bottom: 0px !important;
   border: 0px !important;
 }
-.content-with-border {
-  border-bottom: 1px solid black;
-  padding-bottom: 5px; 
+.color{
+  color: rgb(109, 105, 105);
+  font-weight: normal;
+  font-size:large !important;
+}
+.btncolor{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size:large !important;
+}
+.txtcolor{
+  color:rgb(33, 165, 241);
+}
+.nav-tabs .nav-link {
+  border: none; 
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid #5663af;
+}
+
+.tab-content .tab-pane {
+  display: none; 
 }

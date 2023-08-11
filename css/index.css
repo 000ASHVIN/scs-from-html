@@ -1,3 +1,7 @@
+.container {
+  max-width: 1340px;
+  margin: auto;
+}
 .headertable {
   width: max-content !important;
   color: #ffff;
